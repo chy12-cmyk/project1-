@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리반 소통 공간</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    🎈 우리반 소통 공간
+</header>
+
+<div class="container">
+    <!-- 글쓰기 영역 -->
+    <div class="write-section">
+        <input type="text" id="authorName" placeholder="이름을 입력하세요 (예: 1번 홍길동)">
+        <textarea id="postText" placeholder="친구들에게 하고 싶은 이야기를 자유롭게 적어보세요!"></textarea>
+        <input type="file" id="postImage" accept="image/*">
+        <button class="btn" onclick="addPost()">새 글 올리기</button>
+    </div>
+
+    <!-- 게시글이 추가될 영역 -->
+    <div id="board">
+        <!-- 첫 번째 샘플 게시글 -->
+        <div class="post">
+            <div class="post-header">담임 선생님</div>
+            <div class="post-content">우리반 홈페이지에 온 걸 환영해! 이곳에 재미있는 사진과 글을 많이 남겨주렴. 😊</div>
+            <div class="comments-section" id="comments-0">
+                <div class="comment"><b>반장:</b> 네 선생님! 열심히 활동하겠습니다!</div>
+            </div>
+            <div class="comment-input-wrapper">
+                <input type="text" id="comment-input-0" placeholder="의견을 남겨주세요...">
+                <button onclick="addComment(0)">등록</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript 파일 연결 -->
+<script src="script.js"></script>
+
+</body>
+</html>

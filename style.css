@@ -1,0 +1,133 @@
+/* 기본 스타일 설정 */
+body {
+    font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* 입력 폼 스타일 */
+.write-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.write-section input[type="text"], 
+.write-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.write-section textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+.write-section input[type="file"] {
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* 게시글 스타일 */
+.post {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.post-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.post-content {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.post-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* 댓글(의견) 스타일 */
+.comments-section {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.comment-input-wrapper {
+    display: flex;
+    margin-top: 10px;
+}
+
+.comment-input-wrapper input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+}
+
+.comment-input-wrapper button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.comment-input-wrapper button:hover {
+    background-color: #1976D2;
+}
